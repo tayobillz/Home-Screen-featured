@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #F3F4F6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.navbar {
+  background-color: #ffffff;
+  padding: 19px;
+}
+
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: 25px;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+
+
+.nav-links.show {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  gap: 30px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1F2937;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.nav-links.show {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+.hero-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  color: white;
+  background-color: #FF7A18;
+  border: none;
+  padding: 15px 40px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px 15px;
+  gap: 5px;
+  width: 351px;
+  height: 38px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: -19px;
+  position: relative;
+  z-index: 10;
+}
+
+.search-icon img {
+  width: 55px;
+  height: 50px;
+  display: block;
+}
+
+.search-box input {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.search-box input::placeholder {
+  color: #1F2937;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+
+.categories {
+  margin-top: 9.375rem;
+   gap: 20px;
+}
+
+.section-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 25px;
+  color: #1F2937;
+}
+
+.categories-grid {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.category-item {
+  border: 1px solid #E5E7EB;
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: #FFFFFF;
+   padding: 2px 4px 18px 4px;
+}
+
+.category-item img {
+  width: 100%;
+  height: 222px;
+   border-radius: 14px;
+  object-fit: cover;
+}
+
+.category-item p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+  line-height: 20px;
+  color: #1F2937;
+}
+
+.view-all {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1E88E5;
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+
+
+.specials {
+  margin-top: 3rem;
+  padding: 96px 18px 96px 18px;
+  gap: 33px;
+  
+}
+
+.specials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.special-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2px 2px 46px 2px;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+}
+
+.special-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+  border-radius: 14px;
+}
+
+.card-title {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 12px 4px;
+}
+
+.card-description {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #6B7280;
+  padding: 0 12px;
+  line-height: 20px;
+}
+
+.card-category {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FF7A18;
+  padding: 6px 12px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 14px ;
+}
+
+.card-price {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #FF7A18;
+}
+
+.cart-btn {
+  background-color: #FF7A18;
+  color: white;
+  border: none;
+  padding: 15px 30px 15px 30px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+.advert {
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.advert img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6);
+}
+
+.advert-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 90%;
+  text-align: left;
+
+}
+
+.advert-title {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 40px;
+  margin-bottom: 10px;
+
+}
+
+
+.advert-paragraph {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  max-width: 300px;
+  margin-right: auto;
+}
+
+.advert-btn {
+  font-family: "Inter", sans-serif;
+  background-color: #FF7A18;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+
+.main-footer {
+  position: fixed;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* ─────────────────────────────────
+   DESKTOP
+───────────────────────────────── */
+
+@media (min-width: 768px) {
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav-mobile {
+    width: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+  }
+
+  .nav-links li {
+    list-style: none;
+    white-space: nowrap;
+  }
+
+  .desktop-only {
+    display: flex;
+  }
+
+  .login-btn {
+    display: block;
+  }
+
+  .specials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-footer {
+    position: static;
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    background-color: #62412d;
+    color: white;
+    padding: 65px 110px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 101px;
+    align-items: flex-start;
+  }
+
+  .footer-logo p {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 8px;
+  }
+
+  .footer-links h4,
+  .footer-contact h2,
+  .footer-social h4 {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+
+  .footer-links a,
+  .footer-social a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 6px 0;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-links li,
+  .footer-social li {
+    list-style: none;
+  }
+
+  .footer-contact p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 25px;
+    margin: 4px 0;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-bottom {
+    margin-top: 60px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
