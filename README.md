@@ -30,12 +30,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./)
+<img width="1342" height="642" alt="image" src="https://github.com/user-attachments/assets/9c3153a4-d29a-4a65-9b04-a3cb7a14e368" />
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Chuck's Kitchen Repository](https://github.com/tayobillz/Home-Screen-featured)
+- Live Site URL: [Chuck's Kitchen Live](https://tayobillz.github.io/Home-Screen-featured/)
 
 ---
 
@@ -53,7 +54,7 @@ Users should be able to:
 
 ### What I learned
 
-Working on this project helped me get more comfortable with responsive layouts using CSS Grid and media queries. One key thing I practiced was building a mobile-first navbar that toggles on smaller screens and switches to a full desktop nav on wider screens.
+Working on this project helped me get more comfortable with responsive layouts using CSS Grid and media queries. One key thing I practiced was building a mobile-first navbar that toggles on smaller screens and switches to a full desktop nav on wider screens and also learning what i have done on menu toggle.
 
 ### Continued development
 
@@ -72,5 +73,4 @@ Working on this project helped me get more comfortable with responsive layouts u
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/tayo_billz)
