@@ -1,4 +1,4 @@
-# Frontend Mentor - Chuck's Kitchen
+#  Chuck's Kitchen
 
 This is a solution to the food e-commerce landing page project. Built as a practice project to improve real-world HTML and CSS skills by building a fully responsive food ordering website.
 
@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img width="1342" height="642" alt="image" src="https://github.com/user-attachments/assets/9c3153a4-d29a-4a65-9b04-a3cb7a14e368" />
+![Chuck's Kitchen Screenshot](./assets/images/screenshot.png)
 
 
 ### Links
